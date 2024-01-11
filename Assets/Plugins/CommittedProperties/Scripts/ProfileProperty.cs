@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Castanha.Utils
+namespace Castanha.CommittedProperties
 {
     [Serializable]
     public abstract class ProfileProperty<T> 

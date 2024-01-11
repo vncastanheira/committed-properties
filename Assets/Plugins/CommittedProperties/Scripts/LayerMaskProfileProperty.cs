@@ -1,7 +1,6 @@
-﻿using Castanha.Utils;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Castanha.Utils
+namespace Castanha.CommittedProperties
 {
     [System.Serializable]
     public class LayerMaskProfileProperty : ProfileProperty<LayerMask>

@@ -13,6 +13,34 @@ MonoBehaviour:
   m_Name: Sample Scriptable Object
   m_EditorClassIdentifier: 
   Integer:
+    Value: 20
+    DirtyValue: 20
+    isChanged: 0
+  Float:
+    Value: 5.5
+    DirtyValue: 5.38
+    isChanged: 0
+  Bool:
     Value: 0
     DirtyValue: 0
+    isChanged: 0
+  Vector2:
+    Value: {x: 1, y: 0}
+    DirtyValue: {x: 1, y: 0}
+    isChanged: 0
+  Vector3:
+    Value: {x: 1, y: 0, z: 0}
+    DirtyValue: {x: 1, y: 0, z: 0}
+    isChanged: 0
+  LayerMask:
+    Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    DirtyValue:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    isChanged: 1
+  Tag:
+    Value: Untagged
+    DirtyValue: Untagged
     isChanged: 0

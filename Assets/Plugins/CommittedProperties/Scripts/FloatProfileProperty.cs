@@ -1,4 +1,4 @@
-﻿namespace Castanha.Utils
+﻿namespace Castanha.CommittedProperties
 {
     [System.Serializable]
     public class FloatProfileProperty : ProfileProperty<float>
@@ -29,7 +29,5 @@
             return p;
         }
         #endregion
-
-
     }
 }

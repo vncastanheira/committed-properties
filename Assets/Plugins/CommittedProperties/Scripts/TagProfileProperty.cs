@@ -1,4 +1,4 @@
-namespace Castanha.Utils
+namespace Castanha.CommittedProperties
 {
     [System.Serializable]
     public class TagProfileProperty : ProfileProperty<string>

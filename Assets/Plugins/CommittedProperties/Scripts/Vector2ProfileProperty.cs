@@ -1,47 +1,46 @@
-﻿using System.Runtime.CompilerServices;
 using System;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 namespace Castanha.CommittedProperties
 {
     [System.Serializable]
-    public class Vector3ProfileProperty : ProfileProperty<Vector3>
+    public class Vector2ProfileProperty : ProfileProperty<Vector2>
     {
-        public float x => Get().x;
+        public float x => Get().x; 
         public float y => Get().y;
-        public float z => Get().z;
 
         #region Overload
-        public static Vector3 operator *(Vector3ProfileProperty v, FloatProfileProperty f)
+        public static Vector2 operator *(Vector2ProfileProperty v, FloatProfileProperty f)
         {
             return f.Get() * v.Get();
         }
 
-        public static Vector3 operator *(FloatProfileProperty f, Vector3ProfileProperty v)
+        public static Vector3 operator *(FloatProfileProperty f, Vector2ProfileProperty v)
         {
             return f.Get() * v.Get();
         }
 
-        public static Vector3 operator +(Vector3ProfileProperty v1, Vector3ProfileProperty v2)
+        public static Vector3 operator +(Vector2ProfileProperty v1, Vector2ProfileProperty v2)
         {
             return v1.Get() + v2.Get();
         }
 
-        public static Vector3 operator+(Vector3 v1, Vector3ProfileProperty v2)
+        public static Vector3 operator +(Vector2 v1, Vector2ProfileProperty v2)
         {
             return v1 + v2.Get();
         }
 
-        public static Vector3 operator /(Vector3ProfileProperty vec, float val)
+        public static Vector3 operator /(Vector2ProfileProperty vec, float val)
         {
             return vec.Get() / val;
         }
 
-        public static implicit operator Vector3(Vector3ProfileProperty p) => p.Get();
+        public static implicit operator Vector2(Vector2ProfileProperty p) => p.Get();
 
-        public static implicit operator Vector3ProfileProperty(Vector3 value)
+        public static implicit operator Vector2ProfileProperty(Vector2 value)
         {
-            var p = new Vector3ProfileProperty();
+            var p = new Vector2ProfileProperty();
             p.SetDirty(value);
             p.Commit();
             return p;
@@ -57,7 +56,6 @@ namespace Castanha.CommittedProperties
                 {
                     0 => value.x,
                     1 => value.y,
-                    2 => value.z,
                     _ => throw new IndexOutOfRangeException("Invalid Vector3 index!"),
                 };
             }

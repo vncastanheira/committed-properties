@@ -1,6 +1,4 @@
-﻿using Castanha.Utils;
-
-namespace Castanha.Utils
+﻿namespace Castanha.CommittedProperties
 {
     [System.Serializable]
     public class IntProfileProperty : ProfileProperty<int>
