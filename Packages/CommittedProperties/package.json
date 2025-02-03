@@ -1,0 +1,11 @@
+{
+    "name": "commited-properties",
+    "displayName": "Commited Properties",
+    "version": "1.0.0",
+    "unity": "2022.3",
+    "keywords": ["tools" ],
+    "description": "",
+    "dependencies": {
+      "com.unity.modules.ui": "1.0.0"
+    }
+  }
